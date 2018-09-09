@@ -13,7 +13,7 @@
 	margin-right: 10px;
 }
 .intro p i:hover {
-	transform: scale(1.3);
+	transform: scale(1.2);
 }
 .seq-preloader {
   background: white;
@@ -152,6 +152,10 @@
 
 html {
 	overflow: hidden;
+}
+#resume:hover {
+	text-decoration: none;
+	transform: scale(1.3) !important;
 }
 
 body {
@@ -590,13 +594,14 @@ nav a:hover::before {
 }
 
 .fourth-content .item .hover-effect .hover-content {
-	transform: translateY(-50%);
+	transform: translateY(-50%) scale(0.8);
     position: absolute;
     text-align: left;
     width: 100%;
     top: 50%;
     left: 0;
-    padding: 30px;
+		padding: 10px;
+		
 }
 
 .fourth-content .item .hover-effect h2 {
@@ -616,7 +621,7 @@ nav a:hover::before {
 	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	line-height: 22px;
+	line-height: 18px;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
@@ -841,10 +846,17 @@ nav a:hover::before {
 	nav ul {
 		margin-top: 30px;
 	}
+	.fourth-content .item .hover-effect p {
+		font-size: 10px;
+		/* line-height: 0; */
+	}
 	nav ul li {
 		margin: 10px 0px;
 	}
 	nav a {
 	  	padding: 15px 20px;
+	}
+	.footer {
+		visibility: hidden;
 	}
 }
